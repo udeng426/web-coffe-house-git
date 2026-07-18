@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D1V411 Coffee House</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#home" class="brand">☕ D1V411 Coffee House</a>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+      <nav class="nav">
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">Tentang</a>
+        <a href="#contact">Kontak</a>
+        <a href="#contact" class="cart-pill">Cart <span class="cart-count">0</span></a>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="hero-content">
+          <p class="eyebrow">Coffee • Chill • Community</p>
+          <h1>Tempat terbaik untuk ngopi dan bersantai.</h1>
+          <p>
+            D1V411 Coffee House menghadirkan kopi premium, pastry hangat, dan
+            suasana cozy yang cocok untuk nongkrong, kerja, dan berkumpul.
+          </p>
+          <div class="hero-actions">
+            <a href="#menu" class="btn btn-primary">Pesan Sekarang</a>
+            <a href="#about" class="btn btn-secondary">Kenal Kami</a>
+          </div>
+          <div class="stats">
+            <div>
+              <strong>15+</strong>
+              <span>Menu</span>
+            </div>
+            <div>
+              <strong>4.9/5</strong>
+              <span>Rating</span>
+            </div>
+            <div>
+              <strong>Open</strong>
+              <span>Daily</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <h3>Special Today</h3>
+          <p>Signature Caramel Latte</p>
+          <span>Espresso lembut, susu creamy, dan topping karamel yang nikmat.</span>
+        </div>
+      </section>
+
+      <section id="menu" class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Our Menu</p>
+          <h2>Pilih favoritmu</h2>
+        </div>
+
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">Semua</button>
+          <button class="filter-btn" data-filter="espresso">Espresso</button>
+          <button class="filter-btn" data-filter="milk">Milk</button>
+          <button class="filter-btn" data-filter="non-coffee">Non Coffee</button>
+        </div>
+
+        <div class="menu-grid">
+          <article class="menu-card" data-category="espresso">
+            <h3>Americano</h3>
+            <p>Black coffee yang kuat dan segar.</p>
+            <div class="menu-footer">
+              <span>Rp 24.000</span>
+              <button class="add-btn">Add</button>
+            </div>
+          </article>
+          <article class="menu-card" data-category="milk">
+            <h3>Cappuccino</h3>
+            <p>Espresso, susu, dan foam yang lembut.</p>
+            <div class="menu-footer">
+              <span>Rp 29.000</span>
+              <button class="add-btn">Add</button>
+            </div>
+          </article>
+          <article class="menu-card" data-category="milk">
+            <h3>Vanilla Latte</h3>
+            <p>Manis lembut dengan aroma vanilla.</p>
+            <div class="menu-footer">
+              <span>Rp 31.000</span>
+              <button class="add-btn">Add</button>
+            </div>
+          </article>
+          <article class="menu-card" data-category="non-coffee">
+            <h3>Matcha Latte</h3>
+            <p>Matcha halus dan creamy.</p>
+            <div class="menu-footer">
+              <span>Rp 28.000</span>
+              <button class="add-btn">Add</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-heading">
+          <p class="eyebrow">Food Menu</p>
+          <h2>Makanan yang cocok menemani kopi</h2>
+        </div>
+
+        <div class="menu-grid food-grid">
+          <article class="menu-card">
+            <h3>Chicken Sandwich</h3>
+            <p>Sandwich ayam gurih dengan salad segar.</p>
+            <div class="menu-footer">
+              <span>Rp 29.000</span>
+              <button class="add-btn">Add</button>
+            </div>
+          </article>
+          <article class="menu-card">
+            <h3>Beef Burger</h3>
+            <p>Patty juicy dengan keju dan sayur segar.</p>
+            <div class="menu-footer">
+              <span>Rp 35.000</span>
+              <button class="add-btn">Add</button>
+            </div>
+          </article>
+          <article class="menu-card">
+            <h3>French Fries</h3>
+            <p>Kentang goreng renyah dengan saus spesial.</p>
+            <div class="menu-footer">
+              <span>Rp 18.000</span>
+              <button class="add-btn">Add</button>
+            </div>
+          </article>
+          <article class="menu-card">
+            <h3>Chicken Pasta</h3>
+            <p>Pasta creamy dengan ayam panggang.</p>
+            <div class="menu-footer">
+              <span>Rp 32.000</span>
+              <button class="add-btn">Add</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="section about-section">
+        <div class="about-text">
+          <p class="eyebrow">About Us</p>
+          <h2>Dibuat untuk orang yang suka kopi dan kualitas.</h2>
+          <p>
+            Dari biji kopi pilihan hingga suasana yang hangat, D1V411 Coffee House
+            siap memberikan pengalaman ngopi yang tak terlupakan.
+          </p>
+          <ul>
+            <li>Bean premium</li>
+            <li>Barista ramah</li>
+            <li>Suasana nyaman</li>
+          </ul>
+        </div>
+        <div class="about-card">☕</div>
+      </section>
+
+      <section class="section testimonials">
+        <div class="section-heading">
+          <p class="eyebrow">Testimoni</p>
+          <h2>Apa kata pelanggan kami</h2>
+        </div>
+        <div class="testimonial-grid">
+          <article class="testimonial-card">
+            <p>“Kopi dan suasananya bikin betah lama-lama.”</p>
+            <strong>— Rara</strong>
+          </article>
+          <article class="testimonial-card">
+            <p>“Cocok buat kerja santai dan nongkrong bareng teman.”</p>
+            <strong>— Bima</strong>
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <div>
+          <p class="eyebrow">Kontak</p>
+          <h2>Datang ke D1V411 Coffee House atau hubungi kami.</h2>
+          <p>Jl. Kopi No. 411, Bandung | +62 812 3456 7890</p>
+        </div>
+        <div class="contact-actions">
+          <a href="https://wa.me/6283153409296?text=Halo%20D1V411%20Coffee%20House%2C%20saya%20ingin%20memesan%20menu%20berikut%3A%0A-%20Americano%0A-%20Cappuccino%0A-%20Vanilla%20Latte%0A-%20Matcha%20Latte%0A-%20Chicken%20Sandwich%0A-%20Beef%20Burger%0A-%20French%20Fries%0A-%20Chicken%20Pasta%0A%0AAlamat%3A%20Jl.%20Kopi%20No.%20411%2C%20Bandung%0ADeskripsi%3A%20Coffee%20house%20yang%20nyaman%20untuk%20nongkrong%2C%20bekerja%2C%20dan%20bersantai." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">📱 Hubungi WhatsApp</a>
+          <a href="mailto:d1v411@coffeehouse.com" class="btn btn-primary">d1v411@coffeehouse.com</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>© <span id="year"></span> D1V411 Coffee House. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
